@@ -1,9 +1,16 @@
+
+/* ==========================================================================
+   Global Styles - Sets default font, margin, and padding for the entire page
+   ========================================================================== */
 body {
        font-family: 'Merriweather', serif;
        margin: 0;
        padding: 0;
      }
-
+/* ==========================================================================
+   Header Styles - Styles for the header section with background and text alignment
+   ========================================================================== */
+     
      header {
        background-color: #2c3e50;
        color: white;
@@ -11,7 +18,9 @@ body {
        padding: 10px 0;
        font-size: 0.8em;
      }
-
+/* ==========================================================================
+   Heading and Paragraph Styles - Styles for h2 and p elements
+   ========================================================================== */
      h2 {
        font-size: 1.2em;
        color: #34495e;
@@ -23,7 +32,9 @@ body {
         padding-bottom: 10px;
         color: #7f8c8d;
      }
-
+/* ==========================================================================
+   P1 Styles - Styles for the newsletter intro paragraph with double lines
+   ========================================================================== */
     .p1 {
   display: block;
   max-width: 600px;
@@ -56,6 +67,9 @@ body {
   border-bottom: 2px solid #000;
 }
 
+/* ==========================================================================
+   Contact Information Styles - Styles for the contact fieldset
+   ========================================================================== */
 
      #contactinfo {
         text-align: left;
@@ -65,12 +79,16 @@ body {
      .line {
         border-bottom: 5px solid #000;
      }
+/* ==========================================================================
+   Form Styles - General form layout and design
+   ========================================================================== */     
 
      form {
        max-width: 400px;
        margin: 20px auto;
        padding: 20px;
        border-radius: 5px;
+       background-color: #f5f5f5;
      }
 
      fieldset {
@@ -87,6 +105,10 @@ body {
        font-weight: bold;
      }
 
+
+/* ==========================================================================
+   Placeholder and Input Styles - Styles for input placeholders and general input design
+   ========================================================================== */
      input::placeholder {
 
     text-align: right ;
@@ -149,19 +171,23 @@ body {
        width: 100%;
        min-height: 40px;
      }
-
+/* ==========================================================================
+   Footer Styles - Styles for the footer section
+   ========================================================================== */
      footer {
        text-align: center;
        color: #7f8c8d;
        padding: 10px 0;
        margin-top: 20px;
      }
-
+/* ==========================================================================
+   Newsletter Styles - Specific styles for the newsletter section
+   ========================================================================== */
      fieldset:nth-child(2) p {
         text-align: left;
      }
 
-     .for-row {
+     .form-row {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -171,11 +197,12 @@ body {
      .form-row label {
         justify-content:flex-start ;
      }
-
+/* ==========================================================================
+   Media Query Styles - Tablet and Desktop Layout (min-width: 768px)
+   ========================================================================== */
      @media (min-width: 768px) {
         .form-row {
             display:flex;
-            flex-direction: column;
             align-items: flex-start;
             margin-bottom: 15px;
         
@@ -187,7 +214,7 @@ body {
         }
         
         textarea#topics {
-            flex-unset;
+            flex: unset;
         }
 
        div {
@@ -216,9 +243,12 @@ body {
        }
      }
 
-
+/* ==========================================================================
+   Focus State Styles - Enhanced focus states with transitions
+   ========================================================================== */
      input:focus, select:focus, textarea:focus {
        outline: none;
        border-color: #1abc9c;
        box-shadow: 0 0 5px #1abc9c;
+       transition: border-color 0.3s ease, box-shadow 0.3s ease; ;
      }

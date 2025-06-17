@@ -1,31 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Head section: Defines metadata and links external resources -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/STYLING/style.css"> <!-- Path confirmed for root structure -->
+  <link rel="stylesheet" href="/STYLING/style.css"> 
   <title>The Code Review</title>
 </head>
 <body>
+  <!-- Header section: Contains the site title -->
   <header>
     <h1>The Code Review</h1>
   </header>
   <main>
+    <!-- Main content section: Houses the newsletter signup form -->
     <section>
+      <!-- Heading for the newsletter signup -->
       <h2>Signup for our newsletter</h2>
+      <!-- Introductory paragraph with styled double lines -->
       <p class="p1">Get the latest news on how your code is doing right in your inbox</p>
+      <!-- Form for collecting user information and newsletter preferences -->
       <form action="#" method="post">
+        <!-- Fieldset for contact information -->
         <fieldset id="contactinfo">
-          <legend id="contactinfo">Contact Information</legend>
+          <legend>Contact Information</legend>
           <div><label for="fullName">Full Name</label><input type="text" id="fullName" name="fullName" placeholder="Required" required></div>
           <div><label for="email">Email Address</label><input type="email" id="email" name="email" placeholder="Required" required></div>
-          <div><label for="phone">Phone Number</label><input type="tel" id="phone" name="phone"></div>
-          <div><label for="street">Street Address</label><input type="text" id="street" name="street"></div>
-          <div><label for="city">City</label><input type="text" id="city" name="city"></div>
+          <div><label for="phone">Phone Number</label><input type="tel" id="phone" name="phone" placeholder="+27 000"></div>
+          <div><label for="street">Street Address</label><input type="text" id="street" name="street" placeholder="John"></div>
+          <div><label for="city">City</label><input type="text" id="city" name="city" placeholder="Free State"></div>
           <div><label for="state">State</label><select id="state" name="state"><option value="">Choose State</option></select></div>
-          <div><label for="zip">Zip Code</label><input type="text" id="zip" name="zip"></div>
+          <div><label for="zip">Zip Code</label><input type="text" id="zip" name="zip" placeholder="0000"></div>
         </fieldset>
+        <!-- Fieldset for newsletter preferences -->
         <fieldset>
           <legend id="newsletter-info">Newsletter</legend>
           <p class="p2">Select the newsletters you would like to receive</p>
@@ -37,10 +45,12 @@
           <div class="form-row"><label><input type="radio" name="format" value="plain"> <span>Plain text</span></label></div>
           <div class="form-row"><label for="topics">Other topics you'd like to hear about</label><textarea id="topics" name="topics"></textarea></div>
         </fieldset>
+        <!-- Submit button for form submission -->
         <button type="submit">Sign Up</button>
       </form>
     </section>
   </main>
+   <!-- Footer section: Contains copyright information -->
   <footer>
     <p class="p3">Copyright The Code Review</p>
   </footer>
