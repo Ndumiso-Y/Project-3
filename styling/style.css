@@ -44,13 +44,14 @@ body {
     }
 
     .p1::before {
-  bottom: 5px; /* first (thicker) line closer to the text */
+  bottom: -10px; /* first (thicker) line closer to the text */
   width: 80%;
   border-bottom: 4px solid #000;
+  
 }
 
 .p1::after {
-  bottom: 0; /* second (thinner) line slightly below the first */
+  bottom: -16px; /* second (thinner) line slightly below the first */
   width:80%;
   border-bottom: 2px solid #000;
 }
@@ -84,6 +85,11 @@ body {
        color: #34495e;
        margin-bottom: 10px;
        font-weight: bold;
+     }
+
+     input::placeholder {
+
+    text-align: right ;
      }
 
      div {
@@ -125,6 +131,7 @@ body {
      }
 
      textarea {
+        width: 95.5% ;
         min-height: 75px;
      }
 
