@@ -16,7 +16,7 @@
       <h2>Signup for our newsletter</h2>
       <p class="p1">Get the latest news on how your code is doing right in your inbox</p>
       <form action="#" method="post">
-        <fieldset>
+        <fieldset id="contactinfo">
           <legend id="contactinfo">Contact Information</legend>
           <div><label for="fullName">Full Name</label><input type="text" id="fullName" name="fullName" placeholder="Required" required></div>
           <div><label for="email">Email Address</label><input type="email" id="email" name="email" placeholder="Required" required></div>
@@ -27,14 +27,14 @@
           <div><label for="zip">Zip Code</label><input type="text" id="zip" name="zip"></div>
         </fieldset>
         <fieldset>
-          <legend>Newsletter</legend>
+          <legend id="newsletter-info">Newsletter</legend>
           <p class="p2">Select the newsletters you would like to receive</p>
-          <div><label><input type="checkbox" name="news" value="html"> HTML News</label></div>
-          <div><label><input type="checkbox" name="news" value="css"> CSS News</label></div>
-          <div><label><input type="checkbox" name="news" value="js"> Javascript News</label></div>
+          <div><label><input type="checkbox" name="news" value="html"><span>HTML News</span> </label></div>
+          <div><label><input type="checkbox" name="news" value="css"><span>CSS News</span> </label></div>
+          <div><label><input type="checkbox" name="news" value="js"> <span>Javascript News</span></label></div>
           <p>Newsletter format</p>
-          <div><label><input type="radio" name="format" value="html" checked> HTML</label></div>
-          <div><label><input type="radio" name="format" value="plain"> Plain text</label></div>
+          <div><label><input type="radio" name="format" value="html" checked><span> HTML</span></label></div>
+          <div><label><input type="radio" name="format" value="plain"> <span>Plain text</span></label></div>
           <div><label for="topics">Other topics you'd like to hear about</label><textarea id="topics" name="topics"></textarea></div>
         </fieldset>
         <button type="submit">Sign Up</button>
