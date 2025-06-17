@@ -25,13 +25,13 @@ body {
      }
 
     .p1 {
-       text-align: center;
-       position: relative;
-       padding-bottom: 40px;
-       color: #7f8c8d;
-       display: inline-block;
-       width: auto;
-     }
+  display: block;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  text-align: center;
+  position: relative;
+  color: #7f8c8d;
+}
 
      .p1::after,
     .p1::before {
@@ -154,7 +154,35 @@ body {
         text-align: left;
      }
 
+     .for-row {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 15px;
+     }
+
+     .form-row label {
+        justify-content:flex-start ;
+     }
+
      @media (min-width: 768px) {
+        .form-row {
+            display:flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        
+        }
+
+        #contactinfo div {
+            flex-direction: row;
+            align-items: center;
+        }
+        
+        textarea#topics {
+            flex-unset;
+        }
+
        div {
          flex-direction: row;
          align-items: center;
@@ -164,6 +192,12 @@ body {
          flex: 1;
          justify-content: flex-start;
        }
+
+       input, select, textarea {
+            flex: 2;
+
+       }
+
        .required {
          display: none;
        }
@@ -175,15 +209,6 @@ body {
        }
      }
 
-     fieldset:nth-child(2) div:last-child {
-        flex-direction: column;
-        align-items: flex-start;
-
-     }
-     
-     fieldset:nth-child(2) div:last-child label {
-        margin-bottom: 5px;
-     }
 
      input:focus, select:focus, textarea:focus {
        outline: none;
