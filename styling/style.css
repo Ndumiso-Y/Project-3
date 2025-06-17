@@ -16,7 +16,6 @@ body {
        font-size: 1.2em;
        color: #34495e;
        text-align: center;
-       padding-bottom: -100px;
      }
 
      p {
@@ -38,9 +37,9 @@ body {
     .p1::before {
     content: "";
     position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
     width: 100%;
     }
 
@@ -163,6 +162,7 @@ body {
        label {
          margin-right: 10px;
          flex: 1;
+         justify-content: flex-start;
        }
        .required {
          display: none;
@@ -173,6 +173,16 @@ body {
        #zip {
          width: 25%;
        }
+     }
+
+     fieldset:nth-child(2) div:last-child {
+        flex-direction: column;
+        align-items: flex-start;
+
+     }
+     
+     fieldset:nth-child(2) div:last-child label {
+        margin-bottom: 5px;
      }
 
      input:focus, select:focus, textarea:focus {
