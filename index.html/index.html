@@ -25,6 +25,7 @@
         <!-- Fieldset for contact information -->
         <fieldset id="contactinfo">
           <legend>Contact Information</legend>
+          
           <div><label for="fullName">Full Name</label><input type="text" id="fullName" name="fullName" placeholder="Required" required></div>
           <div><label for="email">Email Address</label><input type="email" id="email" name="email" placeholder="Required" required></div>
           <div><label for="phone">Phone Number</label><input type="tel" id="phone" name="phone" placeholder="+27 000"></div>
@@ -37,13 +38,13 @@
         <fieldset>
           <legend id="newsletter-info">Newsletter</legend>
           <p class="p2">Select the newsletters you would like to receive</p>
-          <div class="form-row"><label><input type="checkbox" name="news" value="html"><span>HTML News</span> </label></div>
-          <div class="form-row"><label><input type="checkbox" name="news" value="css"><span>CSS News</span> </label></div>
-          <div class="form-row"><label><input type="checkbox" name="news" value="js"> <span>Javascript News</span></label></div>
+          <div class="form-row"><label><input type="checkbox" id="news-html" name="news" value="html"><span>HTML News</span> </label></div>
+          <div class="form-row"><label><input type="checkbox" id="news-css name" value="css"><span>CSS News</span> </label></div>
+          <div class="form-row"><label><input type="checkbox" id="news-js" name="news" value="js"> <span>Javascript News</span></label></div>
           <p>Newsletter format</p>
-          <div class="form-row"><label><input type="radio" name="format" value="html" checked><span> HTML</span></label></div>
-          <div class="form-row"><label><input type="radio" name="format" value="plain"> <span>Plain text</span></label></div>
-          <div class="form-row"><label for="topics">Other topics you'd like to hear about</label><textarea id="topics" name="topics"></textarea></div>
+          <div class="form-row"><label><input type="radio" id="format-html" name="format" value="html" checked><span> HTML</span></label></div>
+          <div class="form-row"><label><input type="radio" id="format-plain" name="format" value="plain"> <span>Plain text</span></label></div>
+          <div class="form-row"><label for="topics">Other topics you'd like to hear about</label><textarea id="topics" name="topics" placeholder="Enter topics here"></textarea></div>
         </fieldset>
         <!-- Submit button for form submission -->
         <button type="submit">Sign Up</button>

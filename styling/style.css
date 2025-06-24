@@ -51,7 +51,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     margin: 0;
-    width: 100%;
+    width: 80%;
     }
 
     .p1::before {
@@ -211,6 +211,7 @@ body {
         #contactinfo div {
             flex-direction: row;
             align-items: center;
+            justify-content: flex-start;
         }
         
         textarea#topics {
@@ -224,7 +225,8 @@ body {
        label {
          margin-right: 10px;
          flex: 1;
-         justify-content: flex-start;
+       
+         margin-bottom: o;
        }
 
        input, select, textarea {
@@ -239,7 +241,8 @@ body {
          flex: 2;
        }
        #zip {
-         width: 25%;
+         width: 25% !important;
+         flex: 0 0 25%;
        }
      }
 
