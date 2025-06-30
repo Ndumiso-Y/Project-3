@@ -224,7 +224,8 @@ body {
        }
        label {
          margin-right: 10px;
-         flex: 1;
+         flex-basis: 30%;
+        
        
          margin-bottom: o;
        }
@@ -237,12 +238,10 @@ body {
        .required {
          display: none;
        }
-       input, select, textarea {
-         flex: 2;
-       }
+      
        #zip {
-         width: 25% !important;
-         flex: 0 0 25%;
+         max-width: 25% !important;
+      
        }
      }
 
